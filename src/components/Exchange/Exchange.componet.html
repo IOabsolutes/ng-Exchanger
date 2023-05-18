@@ -1,0 +1,23 @@
+<div class="exchange-widget">
+  <h2>Конвертер валют</h2>
+  <div class="exchange-form">
+    <div class="exchange-input">
+      <input type="number" id="amount1" placeholder="Введите сумму" [(ngModel)]="value1" (input)="convertCurrency1to2()"
+        min="0">
+      <select [(ngModel)]="currency1" (change)="updateExchangeRates()" id="from1">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+    <div class="exchange-input">
+      <input type="number" id="amount2" placeholder="Введите сумму" min="0" [(ngModel)]="value2"
+        (input)="convertCurrency2to1()">
+      <select [(ngModel)]="currency2" (change)="updateExchangeRates()" id="from2">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+  </div>
+</div>

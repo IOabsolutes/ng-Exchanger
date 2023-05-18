@@ -1,0 +1,113 @@
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #f44336;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.currency {
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.rate {
+  font-size: 28px;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 40px;
+  }
+
+  li {
+    margin: 0 5px;
+    font-size: 18px;
+  }
+
+  .currency {
+    margin-right: 3px;
+    font-size: 18px;
+  }
+
+  .rate {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    height: 30px;
+  }
+
+  li {
+    margin: 0 3px;
+    font-size: 16px;
+  }
+
+  .currency {
+    margin-right: 2px;
+    font-size: 14px;
+  }
+
+  .rate {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  li {
+    font-size: 28px;
+  }
+
+  .currency {
+    margin-right: 10px;
+    font-size: 28px;
+  }
+
+  .rate {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 2560px) {
+  li {
+    font-size: 36px;
+  }
+
+  .currency {
+    margin-right: 15px;
+    font-size: 36px;
+  }
+
+  .rate {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 3840px) {
+  li {
+    font-size: 48px;
+  }
+
+  .currency {
+    margin-right: 20px;
+    font-size: 48px;
+  }
+
+  .rate {
+    font-size: 64px;
+  }
+}

@@ -1,0 +1,115 @@
+.exchange-widget {
+  max-width: 600px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.exchange-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.exchange-input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.exchange-input input,
+.exchange-input select {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #f7f7f7;
+}
+.exchange-input select {
+  width: 100%;
+}
+.exchange-input select {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #f7f7f7;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .exchange-form {
+    flex-direction: column;
+  }
+
+  .exchange-input {
+    margin-right: 0;
+  }
+
+  .exchange-input input,
+  .exchange-input select {
+    font-size: 14px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .exchange-widget {
+    max-width: 600px;
+  }
+
+  .exchange-input {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .exchange-input input,
+  .exchange-input select {
+    font-size: 18px;
+  }
+}
+@media (min-width: 2560px) and (max-width: 3840px) {
+  .exchange-widget {
+    max-width: 800px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .exchange-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .exchange-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .exchange-input input,
+  .exchange-input select {
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    transition: border-color 0.2s ease-in-out;
+  }
+}
